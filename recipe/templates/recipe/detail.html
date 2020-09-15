@@ -6,10 +6,10 @@
 </head>
 <body>
 {% if check %}
-{{check.name}}
-{{check.ingredients}}
-{{check.process}}
-{{check.date}}
+recipe name: {{check.name}}
+recipe ingredients:{{check.ingredients}}
+recipe process:{{check.process}}
+creation date:{{check.date}}
 {% endif %}
 <a href="{% url 'recipe:index' %}"><b>Back</b></a>
 
